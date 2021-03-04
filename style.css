@@ -5,7 +5,13 @@ body{
     height: 100%;
     width: 100%;
 }
-
+.name-like {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50px;
+    
+}
 .fb-like{
     width: 200px;
     position: absolute;
@@ -608,7 +614,9 @@ div#ttview {
     ._2screen-info__box-text.text-ig {
         display: none;
     }
-     .fb-like {
-       
-     } 
+    .name-like {
+
+       display: none;
+        
+    }
 }
