@@ -139,8 +139,7 @@ i.fa.fa-fast-backward{
 
 .fa:hover,
 .fas:hover {
-    color: #e91e63;
-    text-shadow: 0 0 4px #e91e63;
+    
     cursor: pointer;
 }
 /*screen*/
