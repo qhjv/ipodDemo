@@ -142,6 +142,12 @@ i.fa.fa-fast-backward{
     
     cursor: pointer;
 }
+i.fa.fa-fast-forward:hover,
+i.fa.fa-fast-backward:hover {
+    color: #e91e63;
+    text-shadow: 0 0 4px #e91e63;
+   
+}
 /*screen*/
 section {
     height: 100%;
@@ -390,8 +396,6 @@ span.number-list {
 }
 img#thumbnail {
     height: 120px;
-    border-radius: 50%;
-    z-index: -2;
 }
 .thumbnail-content {
     display: flex;
