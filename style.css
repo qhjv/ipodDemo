@@ -396,6 +396,8 @@ span.number-list {
 }
 img#thumbnail {
     height: 120px;
+    border-radius: 50%;
+    z-index:-1;
 }
 .thumbnail-content {
     display: flex;
