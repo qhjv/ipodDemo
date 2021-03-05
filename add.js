@@ -252,6 +252,8 @@ const playerWindow = document.getElementById("players");
       $$('.music')[j].onclick = function(){
         const idmusic = this.dataset.id
            tieude.classList.add('tieudenhay')
+           //đĩa nhỏ xuất hiện
+           $(".imgplaying").classList.add('trove')
         // thêm mục đang phát
             // $$(".next-music i")[idmusic-1].style.display = "none"
             
@@ -315,11 +317,13 @@ const playerWindow = document.getElementById("players");
         $('.fa-play').classList.remove('nutsang') 
         tieude.classList.remove('tieudenhay')
         quaydia.pause()
+        quaydianho.pause()
         _this.isPlaying = false;
       }else {
         _this.isPlaying = true;
         $("#audio").play()
         quaydia.play()
+        quaydianho.play()
         $('.fa-play').classList.add('nutsang')
         tieude.classList.add('tieudenhay')
       }
@@ -402,6 +406,12 @@ const playerWindow = document.getElementById("players");
        duration:10000,
        iterations:Infinity
      })
+     const quaydianho = $("#imgplaying").animate([
+      {transform:'rotate(360deg)'}
+    ],{
+      duration:10000,
+      iterations:Infinity
+    })
      
    //khi hết nhạc
    $("#audio").addEventListener("ended", () => {
@@ -441,10 +451,12 @@ const playerWindow = document.getElementById("players");
         const musicheading = $("#name")
         const musicsmall = $("#musicsmall")
         const musicaudio = $("#audio")
+        const musicplaying = $("#imgplaying")
 
         musicheading.textContent=this.songs[this.currentIndex-1].name
         musicsmall.textContent=this.songs[this.currentIndex-1].category
         musicimg.src=this.songs[this.currentIndex-1].image
+        musicplaying.src=this.songs[this.currentIndex-1].image
         musicaudio.src=this.songs[this.currentIndex-1].src
         },
         //nextsong
@@ -520,6 +532,22 @@ re1.onclick = function(){
   tieude.innerHTML = "Playlists";
   
 }
+//ấn playing nhỏ
+$(".imgplaying").onclick=function(){
+  playlists.classList.add('chuyentrang2');
+  
+        re2.classList.add('trove');
+        re2.onclick = function(){
+  
+          playlists.classList.remove('chuyentrang2');
+          playlists.classList.add('chuyentrang');
+          re2.classList.remove('trove');
+          re1.classList.add('trove');
+          tieude.innerHTML = "Music";
+          
+        }
+        tieude.innerHTML = "Playing";
+}
 re2.onclick = function(){
   
   playlists.classList.remove('chuyentrang2');
@@ -528,6 +556,7 @@ re2.onclick = function(){
   tieude.innerHTML = "Music";
   
 }
+
 //info
 
 $(".text-name").addEventListener('mouseenter',function(){
