@@ -553,6 +553,7 @@ $("#imgplaying").onclick=function(){
 $(".imgplaying").onclick=function(){
   $(".imgplaying").classList.toggle('imgplayingtrove')
 }
+
 re2.onclick = function(){
   playlists.classList.remove('chuyentrang2');
   re2.classList.remove('trove');
