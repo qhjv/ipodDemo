@@ -211,9 +211,7 @@ section {
     display: none;
     
 }
-.imgplaying:hover{
-    transform:translateY(-58px)
-}
+
 .playingmini {
     background-image: linear-gradient(to bottom, #FFFFFF -19%, #ACAFB1 82%, #85898C 100%);
     display: flex;
@@ -618,6 +616,12 @@ div#ttview {
 	opacity:1;
 	width: 120%;
 }
+/*cho PC*/
+@media(min-width:1001px){
+    .imgplaying:hover{
+        transform:translateY(-58px)
+    }
+}
 /*cho điện thoại*/
 @media (max-width:1000px){
     .fullscreen {
@@ -658,8 +662,9 @@ div#ttview {
         display: none;
     }
     .imgplayingtrove{
-        transform:translateY(-58px)
+        transform:translateY(-58px);
     }
+    
     .name-like {
 
        display: none;
