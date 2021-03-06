@@ -657,6 +657,9 @@ div#ttview {
     ._2screen-info__box-text.text-ig {
         display: none;
     }
+    .imgplayingtrove{
+        transform:translateY(-58px)
+    }
     .name-like {
 
        display: none;
