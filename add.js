@@ -448,7 +448,7 @@ const playerWindow = document.getElementById("players");
   loadNhac:function(){
         //load nhạc vào playing
         const musicimg = $("#thumbnail")
-        const musicheading = $("#name")
+        const musicheading = $(".name")
         const musicsmall = $("#musicsmall")
         const musicaudio = $("#audio")
         const musicplaying = $("#imgplaying")
