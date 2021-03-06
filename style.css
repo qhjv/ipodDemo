@@ -638,6 +638,13 @@ div#ttview {
         align-items: center;
         justify-content: center;
     }
+     .imgplaying:hover{
+    transform:translateY(0)
+    }
+     .imgplaying:focus{
+    transform:translateY(-58px)
+    }
+
     ._2screen-info__div {
         display: flex;
         justify-content: space-between;
