@@ -664,7 +664,13 @@ div#ttview {
     .imgplayingtrove{
         transform:translateY(-58px);
     }
+<<<<<<< HEAD
     
+=======
+    .imgplaying:hover{
+    transform:none;
+    }
+>>>>>>> 6eb75d1627aeb841f2c6460bba7565bddc027aea
     .name-like {
 
        display: none;
