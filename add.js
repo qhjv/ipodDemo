@@ -538,7 +538,7 @@ $(".imgplaying").onclick=function(){
   
         re2.classList.add('trove');
         re2.onclick = function(){
-  
+          $('.music-list').scrollTop=0;
           playlists.classList.remove('chuyentrang2');
           playlists.classList.add('chuyentrang');
           re2.classList.remove('trove');
