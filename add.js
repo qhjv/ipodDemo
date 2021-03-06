@@ -534,11 +534,14 @@ re1.onclick = function(){
 }
 //ấn playing nhỏ
 $(".imgplaying").onclick=function(){
-  playlists.classList.add('chuyentrang2');
   
+  $(".imgplaying").classList.add('imgplayingtrove');
+  if($(".imgplayingtrove")){
+  playlists.classList.add('chuyentrang2');
+  }
         re2.classList.add('trove');
         re2.onclick = function(){
-  
+          $('.music-list').scrollTop=0;
           playlists.classList.remove('chuyentrang2');
           playlists.classList.add('chuyentrang');
           re2.classList.remove('trove');
@@ -549,7 +552,6 @@ $(".imgplaying").onclick=function(){
         tieude.innerHTML = "Playing";
 }
 re2.onclick = function(){
-  
   playlists.classList.remove('chuyentrang2');
   re2.classList.remove('trove');
   re1.classList.add('trove');
